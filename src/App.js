@@ -9,11 +9,15 @@ import LibraryFooter from "./components/LibraryFooter.jsx";
 import Welcome from "./components/Welcome.jsx";
 import DiscountModal from "./components/DiscountModal";
 
+import BooksGrid from "./components/BooksGrid.jsx";
+import horrorData from "./data/horror.json";
+
 function App() {
   return (
     <div>
       <LibraryNavbar />
       <Welcome />
+      <BooksGrid books={horrorData} />
       <DiscountModal />
       <LibraryFooter />
     </div>
