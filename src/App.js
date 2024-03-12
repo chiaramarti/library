@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+// aggiungiamo l'import del CSS di bootstrap, altrimenti i nostri componenti non verranno
+// visualizzati correttamente
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import LibraryNavbar from "./components/LibraryNavbar.jsx";
+import LibraryFooter from "./components/LibraryFooter.jsx";
+import Welcome from "./components/Welcome.jsx";
+import DiscountModal from "./components/DiscountModal";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <LibraryNavbar />
+      <Welcome />
+      <DiscountModal />
+      <LibraryFooter />
     </div>
   );
 }
