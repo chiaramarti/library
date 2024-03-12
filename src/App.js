@@ -18,6 +18,9 @@ function App() {
       <LibraryNavbar />
       <Welcome />
       <BooksGrid books={horrorData} />
+      <div className="container mt-4">
+        <BooksGrid books={horrorData} />
+      </div>
       <DiscountModal />
       <LibraryFooter />
     </div>
