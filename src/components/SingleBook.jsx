@@ -22,7 +22,7 @@ class SingleBook extends Component {
 
     return (
       <Card
-        style={{ backgroundColor: selected ? 'lightblue' : 'white' }}
+        style={{ backgroundColor: selected ? 'rgb(209, 232, 251)' : 'white' }}
         onClick={this.handleClick}
         className= "h-100"
       >

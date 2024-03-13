@@ -23,7 +23,7 @@
   object-fit:fill;
   height: 400px;
   padding: 5px;
-  border-bottom: #55585f64 solid 1px;
+  border-bottom: #55585f64 solid 1px ;
 }
 
 @media (prefers-reduced-motion: no-preference) {
